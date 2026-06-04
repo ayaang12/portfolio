@@ -97,19 +97,6 @@
   z-index: 0;
 }
 
-.project-copy-clamp {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .project-copy-clamp {
-    -webkit-line-clamp: 4;
-  }
-}
-
 /* Execution thread */
 .execution-thread {
   position: fixed;
@@ -137,21 +124,6 @@
 /* Step easing for transitions */
 .step-transition {
   transition-timing-function: steps(8, end);
-}
-
-/* Horizontal scroll */
-.project-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: hsl(220 100% 50%) transparent;
-}
-.project-scroll::-webkit-scrollbar {
-  height: 4px;
-}
-.project-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-.project-scroll::-webkit-scrollbar-thumb {
-  background: hsl(220 100% 50%);
 }
 
 /* Snap easing keyframe */
