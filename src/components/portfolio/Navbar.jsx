@@ -12,8 +12,8 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-40 backdrop-blur-2xl border-b border-white/60 shadow-[0_8px_32px_0_rgba(0,180,220,0.20),0_1px_0_0_rgba(255,255,255,0.85)_inset,0_-1px_0_0_rgba(255,255,255,0.30)_inset]"
-      style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.72) 0%, rgba(200,240,252,0.52) 100%)' }}
+      className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl border-b border-white/50 shadow-[0_2px_16px_0_rgba(0,120,160,0.10),0_1px_0_0_rgba(255,255,255,0.70)_inset]"
+      style={{ background: 'rgba(255,255,255,0.52)' }}
       initial={{ y: -64, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -51,7 +51,7 @@ export default function Navbar() {
                   <motion.div
                     layoutId="nav-pill"
                     className="absolute inset-0 rounded-lg border border-primary/30"
-                    style={{ background: 'linear-gradient(135deg, rgba(0,180,220,0.12) 0%, rgba(0,220,180,0.08) 100%)' }}
+                    style={{ background: 'rgba(0,150,190,0.10)' }}
                     transition={{ type: 'spring', stiffness: 380, damping: 34 }}
                   />
                 )}

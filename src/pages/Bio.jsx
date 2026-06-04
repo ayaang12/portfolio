@@ -10,8 +10,8 @@ export default function Bio() {
     <div className="min-h-[calc(100vh-3.5rem)] px-6 md:px-12 max-w-[1400px] mx-auto py-8">
       {/* Hero */}
       <div
-        className="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-16 md:pt-20 pb-8 rounded-3xl backdrop-blur-2xl border border-white/70 shadow-[0_16px_48px_0_rgba(0,160,210,0.22),0_2px_0_0_rgba(255,255,255,0.9)_inset,inset_0_-1px_0_rgba(0,180,220,0.15)] p-6 md:p-10"
-        style={{ background: 'linear-gradient(145deg, rgba(255,255,255,0.68) 0%, rgba(210,245,255,0.45) 50%, rgba(180,235,245,0.35) 100%)' }}
+        className="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-16 md:pt-20 pb-8 rounded-3xl backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_0_rgba(0,120,160,0.14),0_2px_0_0_rgba(255,255,255,0.80)_inset] p-6 md:p-10"
+        style={{ background: 'rgba(255,255,255,0.50)' }}
       >
         {/* Left - Manifesto */}
         <div className="lg:col-span-8 lg:pr-10 lg:border-r border-white/40">

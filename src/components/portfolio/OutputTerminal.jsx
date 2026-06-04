@@ -10,7 +10,7 @@ const clubs = [
 
 export default function OutputTerminal() {
   return (
-    <div className="font-mono text-xs space-y-6 rounded-2xl p-5 backdrop-blur-2xl border border-white/70 shadow-[0_8px_32px_0_rgba(0,160,210,0.20),0_1px_0_0_rgba(255,255,255,0.92)_inset,inset_0_-1px_0_rgba(0,180,220,0.12)]" style={{ background: 'linear-gradient(145deg, rgba(255,255,255,0.70) 0%, rgba(210,248,255,0.48) 50%, rgba(160,230,240,0.32) 100%)' }}>
+    <div className="font-mono text-xs space-y-6 rounded-2xl p-5 backdrop-blur-xl border border-white/60 shadow-[0_4px_20px_0_rgba(0,120,160,0.12),0_1px_0_0_rgba(255,255,255,0.80)_inset]" style={{ background: 'rgba(255,255,255,0.52)' }}>
       <div className="space-y-3">
         <p className="text-muted-foreground tracking-widest text-[10px] mb-3">// LINKS</p>
         <a
@@ -18,7 +18,7 @@ export default function OutputTerminal() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 p-3 rounded-xl border border-white/50 hover:border-primary/60 hover:text-primary transition-colors duration-150 min-h-[44px] backdrop-blur-sm shadow-sm"
-          style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.72) 0%, rgba(210,248,255,0.50) 100%)' }}
+          style={{ background: 'rgba(255,255,255,0.45)' }}
         >
           <Linkedin className="w-4 h-4 flex-shrink-0" />
           <span className="text-[11px] truncate">linkedin.com/in/ayaan-gill</span>
@@ -30,7 +30,7 @@ export default function OutputTerminal() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 p-3 rounded-xl border border-white/50 hover:border-primary/60 hover:text-primary transition-colors duration-150 min-h-[44px] backdrop-blur-sm shadow-sm"
-          style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.72) 0%, rgba(210,248,255,0.50) 100%)' }}
+          style={{ background: 'rgba(255,255,255,0.45)' }}
         >
           <Github className="w-4 h-4 flex-shrink-0" />
           <span className="text-[11px] truncate">github.com/ayaang12</span>

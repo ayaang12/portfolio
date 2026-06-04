@@ -41,7 +41,7 @@ export default function SystemStatus() {
   return (
     <div
       className="font-mono text-xs space-y-6 rounded-2xl p-5 backdrop-blur-2xl border border-white/70 shadow-[0_8px_32px_0_rgba(0,160,210,0.20),0_1px_0_0_rgba(255,255,255,0.92)_inset,inset_0_-1px_0_rgba(0,180,220,0.12)]"
-      style={{ background: 'linear-gradient(145deg, rgba(255,255,255,0.70) 0%, rgba(210,248,255,0.48) 50%, rgba(160,230,240,0.32) 100%)' }}
+      style={{ background: 'rgba(255,255,255,0.52)' }}
     >
       <div>
         <p className="text-muted-foreground mb-3 tracking-widest text-[10px]">// CONTACT_ME</p>

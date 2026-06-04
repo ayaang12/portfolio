@@ -35,8 +35,8 @@ export default function Resume() {
       {/* Two Column Layout */}
       <AnimatedSection delay={0.15}>
         <div
-          className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 rounded-2xl backdrop-blur-xl border border-white/50 shadow-[0_8px_32px_0_rgba(0,180,220,0.15),0_2px_0_0_rgba(255,255,255,0.6)_inset] p-6 md:p-10"
-          style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.50) 0%, rgba(180,235,245,0.38) 100%)' }}
+          className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 rounded-2xl backdrop-blur-xl border border-white/60 shadow-[0_4px_20px_0_rgba(0,120,160,0.12),0_2px_0_0_rgba(255,255,255,0.70)_inset] p-6 md:p-10"
+          style={{ background: 'rgba(255,255,255,0.50)' }}
         >
           {/* Left - The Document */}
           <div className="lg:col-span-8 lg:pr-10 lg:border-r border-white/40">
@@ -59,8 +59,8 @@ export default function Resume() {
           className="w-full py-5 rounded-2xl font-mono text-sm tracking-widest text-white
             flex items-center justify-center gap-3 min-h-[44px]
             focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-          style={{ background: 'linear-gradient(135deg, hsl(195 90% 42%) 0%, hsl(160 70% 45%) 100%)', boxShadow: '0 4px 20px 0 rgba(0,180,220,0.30), 0 1px 0 0 rgba(255,255,255,0.35) inset' }}
-          whileHover={{ scale: 1.015, boxShadow: '0 10px 40px 0 rgba(0,180,220,0.50), 0 1px 0 0 rgba(255,255,255,0.35) inset' }}
+          style={{ background: 'hsl(195 90% 38%)', boxShadow: '0 4px 20px 0 rgba(0,120,160,0.25), 0 1px 0 0 rgba(255,255,255,0.25) inset' }}
+          whileHover={{ scale: 1.015, boxShadow: '0 8px 32px 0 rgba(0,120,160,0.40), 0 1px 0 0 rgba(255,255,255,0.25) inset' }}
           whileTap={{ scale: 0.985 }}
           transition={{ type: 'spring', stiffness: 400, damping: 28 }}
         >

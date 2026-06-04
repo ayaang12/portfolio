@@ -49,10 +49,9 @@ export default function ProjectPlate({ index, title, description, image, specs }
       >
         {/* Left Text Side */}
         <div
-          className="h-full min-h-0 flex flex-col rounded-2xl border border-white/50 p-4 md:p-5 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(0,180,220,0.14),0_2px_0_0_rgba(255,255,255,0.6)_inset]"
+          className="h-full min-h-0 flex flex-col rounded-2xl border border-white/50 p-4 md:p-5 backdrop-blur-xl shadow-[0_4px_20px_0_rgba(0,120,160,0.10),0_2px_0_0_rgba(255,255,255,0.60)_inset]"
           style={{
-            background:
-              'linear-gradient(135deg, rgba(255,255,255,0.58) 0%, rgba(180,235,245,0.28) 100%)',
+            background: 'rgba(255,255,255,0.50)',
           }}
         >
           {/* Index + Title */}
@@ -79,10 +78,9 @@ export default function ProjectPlate({ index, title, description, image, specs }
 
           {/* Spec Sheet */}
           <motion.div
-            className="font-mono text-xs grid grid-cols-1 gap-y-3 rounded-xl p-4 mt-5 backdrop-blur-xl border border-white/50 shadow-[0_2px_12px_0_rgba(0,180,220,0.12),0_1px_0_0_rgba(255,255,255,0.6)_inset]"
+            className="font-mono text-xs grid grid-cols-1 gap-y-3 rounded-xl p-4 mt-5 backdrop-blur-xl border border-white/50 shadow-[0_2px_12px_0_rgba(0,120,160,0.08),0_1px_0_0_rgba(255,255,255,0.55)_inset]"
             style={{
-              background:
-                'linear-gradient(135deg, rgba(255,255,255,0.55) 0%, rgba(180,235,245,0.35) 100%)',
+              background: 'rgba(255,255,255,0.42)',
             }}
             animate={{ y: hovered ? -2 : 0 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
