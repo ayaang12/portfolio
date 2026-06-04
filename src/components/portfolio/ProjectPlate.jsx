@@ -2,10 +2,14 @@ import { useState, useRef } from 'react';
 import { motion, useSpring, useTransform } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 
-export default function ProjectPlate({ index, title, description, image, specs }) {
+export default function ProjectPlate({ index, title, description, image, specs, problem, challenge }) {
   const [hovered, setHovered] = useState(false);
   const num = String(index + 1).padStart(2, '0');
   const plateRef = useRef(null);
+  const insights = [
+    { label: 'PROBLEM', value: problem, color: 'hsl(195 90% 38%)' },
+    { label: 'CHALLENGE', value: challenge, color: 'hsl(270 60% 55%)' },
+  ];
 
   // Magnetic tilt
   const rawX = useSpring(0, { stiffness: 180, damping: 22 });
@@ -49,7 +53,7 @@ export default function ProjectPlate({ index, title, description, image, specs }
       >
         {/* Left Text Side */}
         <div
-          className="h-full min-h-0 flex flex-col rounded-2xl border border-white/50 p-4 md:p-5 backdrop-blur-xl shadow-[0_4px_20px_0_rgba(0,120,160,0.10),0_2px_0_0_rgba(255,255,255,0.60)_inset]"
+          className="h-full min-h-0 flex flex-col overflow-hidden rounded-2xl border border-white/50 p-4 md:p-5 backdrop-blur-xl shadow-[0_4px_20px_0_rgba(0,120,160,0.10),0_2px_0_0_rgba(255,255,255,0.60)_inset]"
           style={{
             background: 'rgba(255,255,255,0.50)',
           }}
@@ -72,13 +76,43 @@ export default function ProjectPlate({ index, title, description, image, specs }
           </div>
 
           {/* Description */}
-          <p className="font-mono text-xs text-muted-foreground leading-relaxed flex-1 overflow-hidden">
+          <p className="project-copy-clamp font-mono text-[11px] md:text-xs text-muted-foreground leading-relaxed">
             {description}
           </p>
 
+          {/* Problem + Challenge */}
+          <div className="grid grid-cols-1 gap-2 mt-4">
+            {insights.map((item, i) => (
+              <motion.div
+                key={item.label}
+                className="rounded-xl border border-white/45 px-3 py-2.5 backdrop-blur-xl shadow-[0_2px_10px_0_rgba(0,120,160,0.07),0_1px_0_0_rgba(255,255,255,0.55)_inset]"
+                style={{
+                  background: 'rgba(255,255,255,0.36)',
+                }}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.16 + i * 0.06,
+                  duration: 0.35,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+              >
+                <p
+                  className="font-mono text-[9px] tracking-[0.18em] mb-1"
+                  style={{ color: item.color }}
+                >
+                  {item.label}
+                </p>
+                <p className="font-mono text-[11px] leading-relaxed text-foreground/75">
+                  {item.value}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+
           {/* Spec Sheet */}
           <motion.div
-            className="font-mono text-xs grid grid-cols-1 gap-y-3 rounded-xl p-4 mt-5 backdrop-blur-xl border border-white/50 shadow-[0_2px_12px_0_rgba(0,120,160,0.08),0_1px_0_0_rgba(255,255,255,0.55)_inset]"
+            className="font-mono text-xs grid grid-cols-1 gap-y-2.5 rounded-xl p-3 md:p-4 mt-4 backdrop-blur-xl border border-white/50 shadow-[0_2px_12px_0_rgba(0,120,160,0.08),0_1px_0_0_rgba(255,255,255,0.55)_inset]"
             style={{
               background: 'rgba(255,255,255,0.42)',
             }}

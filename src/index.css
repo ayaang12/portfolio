@@ -78,7 +78,7 @@
   z-index: 9999;
 }
 
-/* Flat single-color background */
+/* Soft blueprint background */
 .blueprint-grid {
   background: hsl(195 55% 84%);
   background-attachment: fixed;
@@ -86,7 +86,28 @@
 }
 
 .blueprint-grid::after {
-  content: none;
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(100,150,200,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100,150,200,0.1) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-copy-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .project-copy-clamp {
+    -webkit-line-clamp: 4;
+  }
 }
 
 /* Execution thread */
