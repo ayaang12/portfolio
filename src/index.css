@@ -85,20 +85,8 @@
   position: relative;
 }
 
-.blueprint-grid::before {
-  content: none;
-}
-
 .blueprint-grid::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(100,150,200,0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(100,150,200,0.12) 1px, transparent 1px);
-  background-size: 40px 40px;
-  pointer-events: none;
-  z-index: 0;
+  content: none;
 }
 
 /* Execution thread */
