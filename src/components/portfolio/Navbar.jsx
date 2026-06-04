@@ -50,8 +50,7 @@ export default function Navbar() {
                 {isActive && (
                   <motion.div
                     layoutId="nav-pill"
-                    className="absolute inset-0 rounded-lg border border-primary/30"
-                    style={{ background: 'rgba(0,150,190,0.10)' }}
+                    className="absolute inset-0 rounded-lg border border-secondary/40 bg-gradient-to-br from-secondary/15 to-transparent"
                     transition={{ type: 'spring', stiffness: 380, damping: 34 }}
                   />
                 )}

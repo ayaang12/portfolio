@@ -75,7 +75,7 @@ export default function Projects() {
             // OUTSTANDING_WORKS
           </p>
           <h2 className="font-sans text-4xl md:text-6xl font-bold tracking-tighter text-foreground">
-            SELECTED <span className="text-primary">PROJECTS</span>
+            SELECTED <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">PROJECTS</span>
           </h2>
           <p className="font-mono text-xs text-muted-foreground mt-3">
             SCROLL_HORIZONTAL → TO NAVIGATE PROJECTS

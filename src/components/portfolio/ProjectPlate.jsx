@@ -59,7 +59,7 @@ export default function ProjectPlate({ index, title, description, image, specs }
             <motion.span
               className="font-mono text-3xl md:text-5xl font-bold tracking-tighter"
               animate={{
-                color: hovered ? 'hsl(195 90% 42%)' : 'hsl(190 40% 72%)',
+                color: hovered ? 'hsl(270 60% 70%)' : 'hsl(190 40% 72%)',
               }}
               transition={{ duration: 0.3 }}
             >
@@ -100,7 +100,9 @@ export default function ProjectPlate({ index, title, description, image, specs }
                 <p className="text-[10px] text-muted-foreground tracking-widest">
                   {spec.key}
                 </p>
-                <p className="text-foreground font-medium text-right">
+                <p className="text-foreground font-medium text-right" style={{
+                  color: i % 2 === 0 ? 'hsl(270 60% 55%)' : 'hsl(150 70% 45%)',
+                }}>
                   {spec.value}
                 </p>
               </motion.div>

@@ -17,8 +17,8 @@ export default function OutputTerminal() {
           href="https://www.linkedin.com/in/ayaan-gill-8952b43a0/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 p-3 rounded-xl border border-white/50 hover:border-primary/60 hover:text-primary transition-colors duration-150 min-h-[44px] backdrop-blur-sm shadow-sm"
-          style={{ background: 'rgba(255,255,255,0.45)' }}
+          className="flex items-center gap-3 p-3 rounded-xl border hover:border-secondary/60 hover:text-secondary transition-colors duration-150 min-h-[44px] backdrop-blur-sm shadow-sm"
+          style={{ background: 'rgba(255,255,255,0.45)', borderColor: 'rgba(270, 60%, 70%, 0.3)' }}
         >
           <Linkedin className="w-4 h-4 flex-shrink-0" />
           <span className="text-[11px] truncate">linkedin.com/in/ayaan-gill</span>
@@ -29,8 +29,8 @@ export default function OutputTerminal() {
           href="https://github.com/ayaang12"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 p-3 rounded-xl border border-white/50 hover:border-primary/60 hover:text-primary transition-colors duration-150 min-h-[44px] backdrop-blur-sm shadow-sm"
-          style={{ background: 'rgba(255,255,255,0.45)' }}
+          className="flex items-center gap-3 p-3 rounded-xl border hover:border-accent/60 hover:text-accent transition-colors duration-150 min-h-[44px] backdrop-blur-sm shadow-sm"
+          style={{ background: 'rgba(255,255,255,0.45)', borderColor: 'rgba(150, 70%, 48%, 0.3)' }}
         >
           <Github className="w-4 h-4 flex-shrink-0" />
           <span className="text-[11px] truncate">github.com/ayaang12</span>

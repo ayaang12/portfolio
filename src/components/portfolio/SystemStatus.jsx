@@ -63,7 +63,10 @@ export default function SystemStatus() {
           {stack.map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 border border-border text-[10px] text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-100 cursor-default"
+              className="px-2 py-1 border text-[10px] text-muted-foreground hover:text-accent hover:border-accent transition-colors duration-100 cursor-default"
+              style={{
+                borderColor: tech.includes('PYTHON') || tech.includes('JAVA') ? 'hsl(270 60% 70%)' : tech.includes('JAVASCRIPT') || tech.includes('REACT') ? 'hsl(150 70% 48%)' : 'hsl(210 30% 68%)',
+              }}
             >
               {tech}
             </span>

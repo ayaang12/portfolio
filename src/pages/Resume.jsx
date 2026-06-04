@@ -27,7 +27,7 @@ export default function Resume() {
             // RESUME_LEDGER
           </p>
           <h2 className="font-sans text-4xl md:text-6xl font-bold tracking-tighter text-foreground">
-            MY <span className="text-primary">EXPERIENCE</span>
+            MY <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">EXPERIENCE</span>
           </h2>
         </motion.div>
       </div>

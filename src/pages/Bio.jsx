@@ -25,7 +25,7 @@ export default function Bio() {
           <div className="mb-8">
             <h1 className="text-[clamp(2.5rem,8vw,7rem)] font-sans font-900 leading-[0.9] tracking-tighter">
               <ScrambleText text="AYAAN" delay={0.1} className="block text-foreground" />
-              <ScrambleText text="GILL" delay={0.35} className="block text-primary" />
+              <ScrambleText text="GILL" delay={0.35} className="block bg-gradient-to-r from-secondary via-primary to-accent bg-clip-text text-transparent" />
             </h1>
           </div>
 
