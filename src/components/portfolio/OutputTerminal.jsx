@@ -2,10 +2,10 @@ import { Github, Linkedin, ArrowUpRight } from 'lucide-react';
 
 const clubs = [
   { role: 'Co-President & Founder', org: 'Muslim Student Association' },
-  { role: 'Sub-leader', org: 'FIRST Robotics Competition' },
-  { role: 'Secretary', org: 'Teen Advisory Board' },
-  { role: 'Member · State Placer', org: 'HOSA' },
-  { role: 'JV Wrestler', org: 'Wrestling Team' },
+  { role: 'Choreographer', org: 'Multicultural Club' },
+  { role: 'Member · State Placer', org: 'NJ HOSA' },
+  { role: 'Wrestler', org: 'Wrestling Team' },
+  { role: 'Programming Sub-Team Member', org: 'FIRST Robotics Competition' },
 ];
 
 export default function OutputTerminal() {

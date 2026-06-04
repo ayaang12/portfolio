@@ -13,7 +13,6 @@ const projects = [
     image: '/paniv.png',
     specs: [
       { key: 'LANGUAGE', value: 'TypeScript, C++' },
-      { key: 'TEAM', value: 'Four Members' },
       { key: 'NJ HOSA', value: '5th Place' },
     ],
   },
@@ -25,7 +24,7 @@ const projects = [
     image: '/isolytics.png',
     specs: [
       { key: 'LANGUAGE', value: 'React/Vite, TypeScript' },
-      { key: 'TEAM', value: 'Three Members' },
+  
       { key: 'Competition', value: 'Congressional App Challenge' },
     ],
   },
@@ -48,8 +47,8 @@ const projects = [
     image: '/truthlensai.png',
     specs: [
       { key: 'LANGUAGE', value: 'Python, ML' },
-      { key: 'LIBRARIES', value: 'Pytorch, Numpy' },
-      { key: 'DATASET', value: 'Kaggle News Dataset' },
+      { key: 'LIBRARIES/DATASET', value: 'Pytorch, Numpy, Kaggle' },
+    
     ],
   },
 ];

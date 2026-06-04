@@ -8,23 +8,23 @@ const experiences = [
   },
   {
     period: 'SEP 2020 — PRESENT',
-    role: 'Secretary — Teen Advisory Board',
+    role: 'President — Teen Advisory Board',
     company: 'Montville Township Public Library · Montville, NJ',
     description: 'Planned and ran events for children, teens, and adults. Recorded meeting minutes, assisted guests, and helped kids engage with culture, science, and technology.',
     tags: ['Leadership', 'Event Planning', 'Organization'],
   },
   {
     period: 'SEP 2023 — PRESENT',
-    role: 'Mechanical & Programming Sub-leader',
+    role: 'Mechanical & Programming Sub-Team Member',
     company: 'FIRST Robotics Competition · MCST',
-    description: 'Led a sub-team to design, build, and program a competition robot. Worked with wiring, metal fabrication, and collaborated on strategic solutions.',
+    description: 'Worked with a team to design, build, and program a competition robot. Worked with wiring, metal fabrication, and collaborated on strategic solutions.',
     tags: ['Robotics', 'Java', 'Engineering', 'Teamwork'],
   },
   {
     period: 'NOV 2024 — PRESENT',
-    role: 'JV Wrestler',
+    role: 'Wrestler',
     company: 'Montville Township High School · Montville, NJ',
-    description: 'Competed at 175 and 190 lbs on the Junior Varsity team. Participated in tournaments and dual meets against other schools.',
+    description: 'Competed at 175 and 190 lbs on the wrestling team. Participated in tournaments and dual meets against other schools.',
     tags: ['Athletics', 'Discipline', 'Competition'],
   },
   {
@@ -47,7 +47,7 @@ const education = [
     period: '2023 — 2027',
     degree: 'High School Diploma (In Progress)',
     institution: 'Morris County School of Technology — Academy for Computer and Information Sciences',
-    note: 'Denville, NJ · Class of 2027 · Focus: Computer Science & Information Technology',
+    note: 'Denville, NJ · Class of 2027 · Dual-enrollment with County College of Morris',
   },
 ];
 

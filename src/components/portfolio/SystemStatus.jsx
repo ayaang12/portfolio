@@ -32,7 +32,7 @@ export default function SystemStatus() {
   const statusItems = [
     { key: 'STATUS', value: 'OPEN_TO_WORK', live: false },
     { key: 'LOCATION', value: 'NYC_METRO', live: false},
-    { key: 'PHONE', value: '+1(551)-364-799', live: false },
+    { key: 'PHONE', value: '+1(551)-364-7979', live: false },
     { key: 'EMAIL', value: 'gill.aa0902@gmail.com', live: false },
   ];
 
