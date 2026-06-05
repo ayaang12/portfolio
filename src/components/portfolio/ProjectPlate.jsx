@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { motion, useSpring, useTransform } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 
-export default function ProjectPlate({ index, title, description, image, specs, problem, challenge }) {
+export default function ProjectPlate({ index, title, description, image, repoUrl, specs, problem, challenge }) {
   const [hovered, setHovered] = useState(false);
   const num = String(index + 1).padStart(2, '0');
   const plateRef = useRef(null);
@@ -140,7 +140,13 @@ export default function ProjectPlate({ index, title, description, image, specs, 
         </div>
 
         {/* Right Image Side */}
-        <div className="relative min-h-[320px] md:min-h-[430px] overflow-hidden rounded-2xl border border-white/50 shadow-[0_8px_32px_0_rgba(0,180,220,0.20),0_2px_0_0_rgba(255,255,255,0.6)_inset]">
+        <a
+          href={repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open ${title} GitHub repository`}
+          className="relative block min-h-[320px] md:min-h-[430px] overflow-hidden rounded-2xl border border-white/50 shadow-[0_8px_32px_0_rgba(0,180,220,0.20),0_2px_0_0_rgba(255,255,255,0.6)_inset]"
+        >
           <motion.img
             src={image}
             alt={title}
@@ -166,7 +172,7 @@ export default function ProjectPlate({ index, title, description, image, specs, 
           />
 
          
-        </div>
+        </a>
       </motion.div>
 
       <motion.div

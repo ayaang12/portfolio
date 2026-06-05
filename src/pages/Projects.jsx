@@ -10,6 +10,7 @@ const projects = [
     problem: 'IV Line and catheter infections can escalate before staff even know an infection is present. PAN-IV provides a way to detect infections early, which can save lives and reduce healthcare costs.',
     challenge: 'The hardest part was getting data from Supabase and the physical device to show up on the frontend in the form of multiple graphs. I overcame this by using niche Arduino documentation to get the device to send data to the backend, and then I utilized Codex to write code that would pull that data from supabase and display it on the frontend of the app, so placeholder data would not have to be used.',
     image: '/paniv.png',
+    repoUrl: 'https://github.com/ayaang12/PAN-IV',
     specs: [
       { key: 'LANGUAGE', value: 'TypeScript, C++' },
       { key: 'BACKEND', value: 'Supabase' },
@@ -22,6 +23,7 @@ const projects = [
     problem: 'Fitness progress often gets split across separate trackers, notes, and apps, making patterns hard to see.',
     challenge: 'One of the biggest challenges was figuring out authentication and user sign up/log in. In early development, the app would not allow users to create accounts or log in, which made testing other features difficult. I overcame this by using different tutorials and documentation to fully integrate Firebase authentication, whicha allowed users to create accounts and have their progress be saved.',
     image: '/isolytics.png',
+    repoUrl: 'https://github.com/ayaang12/isolytics',
     specs: [
       { key: 'LANGUAGE', value: 'React/Vite, TypeScript' },
       { key: 'BACKEND', value: 'Firebase' },
@@ -34,6 +36,7 @@ const projects = [
     problem: 'Spotify users often have large catalogs of playlists that they don’t interact with because they have trouble figuring out what to listen to.',
     challenge: 'The challenge was creating a design that was visually appealing while also displaying the correct data and functionality in a way that felt intuitive. Overcame this by utilizing LLMs to aid in spacing for different frontend components while also checking the Spotify API documentation to ensure the correct data was being pulled and displayed.',
     image: '/playlytics.png',
+    repoUrl: 'https://github.com/ayaang12/playlytics-frontend',
     specs: [
       { key: 'LANGUAGE', value: 'React/Vite, TypeScript, Java' },
       { key: 'API', value: 'Spotify' },
@@ -45,6 +48,7 @@ const projects = [
     problem: 'News headlines can be misleading, and readers often need a quick way to question claims before sharing them.',
     challenge: 'The challenge was training a model that could somewhat accurately identify clickbait articles. I overcame this by using a Kaggle dataset filled with real and fake news headlines, and then training a model using Pytorch to learn patterns in the titles that could inticate whether an article was likely to be fake or not.',
     image: '/truthlensai.png',
+    repoUrl: 'https://github.com/ayaang12/AI-Project',
     specs: [
       { key: 'LANGUAGE', value: 'Python, ML' },
       { key: 'LIBRARIES/DATASET', value: 'Pytorch, Numpy, Kaggle' },
