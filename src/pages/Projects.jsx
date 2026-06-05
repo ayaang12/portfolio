@@ -6,12 +6,13 @@ import ProjectPlate from '../components/portfolio/ProjectPlate';
 const projects = [
   {
     title: 'PAN-IV',
-    description: 'A medical device used to detect early signs of bacterial infections in peripheral IV lines, central venous lines, and urinary catheters. Uses polyaniline, temperature sensors, and a pulse oximeter to collect data (body temp, pulse, oxygen level, pH) for each patient. Uses a circuit board and web app to analyze data through a proprietary algorithm. Sends alerts.',
-    problem: 'Line and catheter infections can escalate before staff have a clear early signal that something is wrong.',
-    challenge: 'The hardest part was connecting sensor readings, hardware constraints, and alert logic into one dependable workflow.',
+    description: 'A medical device used to detect early signs of bacterial infections in peripheral IV lines, central venous lines, and urinary catheters. Uses polyaniline, temperature sensors, and a pulse oximeter to collect data (body temp, pulse, oxygen level, pH) for each patient. Uses a circuit board and web app to analyze data through a proprietary algorithm. Sends alerts to a doctor or other healthcare professional.',
+    problem: 'IV Line and catheter infections can escalate before staff even know an infection is present. PAN-IV provides a way to detect infections early, which can save lives and reduce healthcare costs.',
+    challenge: 'The hardest part was getting data from Supabase and the physical device to show up on the frontend in the form of multiple graphs. I overcame this by using niche Arduino documentation to get the device to send data to the backend, and then I utilized Codex to write code that would pull that data from supabase and display it on the frontend of the app, so placeholder data would not have to be used.',
     image: '/paniv.png',
     specs: [
       { key: 'LANGUAGE', value: 'TypeScript, C++' },
+      { key: 'BACKEND', value: 'Supabase' },
       { key: 'NJ HOSA', value: '5th Place' },
     ],
   },
@@ -19,29 +20,30 @@ const projects = [
     title: 'ISOLYTICS',
     description: 'A web and mobile application designed to streamline physical fitness. Includes health and progress tracking, as well as meal and lift logging. Features a custom-trained AI assistant that provides personalized workout and nutrition recommendations based on user data and goals.',
     problem: 'Fitness progress often gets split across separate trackers, notes, and apps, making patterns hard to see.',
-    challenge: 'I focused on making the AI guidance feel useful and personal without overwhelming the user with too much data.',
+    challenge: 'One of the biggest challenges was figuring out authentication and user sign up/log in. In early development, the app would not allow users to create accounts or log in, which made testing other features difficult. I overcame this by using different tutorials and documentation to fully integrate Firebase authentication, whicha allowed users to create accounts and have their progress be saved.',
     image: '/isolytics.png',
     specs: [
       { key: 'LANGUAGE', value: 'React/Vite, TypeScript' },
+      { key: 'BACKEND', value: 'Firebase' },
       { key: 'Competition', value: 'Congressional App Challenge' },
     ],
   },
   {
     title: 'PLAYLYTICS-FRONTEND',
     description: 'The frontend web design for a Spotify playlist randomizer and viewer. Users can connect their Spotify account and play a random playlist from their catalog. They can also view each of their playlists in a visually appealing way, with stats about each playlist and its songs. The app is built with React and Vite, and uses the Spotify API to fetch user data and playlists.',
-    problem: 'Large Spotify libraries can become stale because users rarely rediscover older playlists or compare them easily.',
-    challenge: 'The challenge was turning Spotify account data into a fast, playful interface that still felt organized and readable.',
+    problem: 'Spotify users often have large catalogs of playlists that they don’t interact with because they have trouble figuring out what to listen to.',
+    challenge: 'The challenge was creating a design that was visually appealing while also displaying the correct data and functionality in a way that felt intuitive. Overcame this by utilizing LLMs to aid in spacing for different frontend components while also checking the Spotify API documentation to ensure the correct data was being pulled and displayed.',
     image: '/playlytics.png',
     specs: [
       { key: 'LANGUAGE', value: 'React/Vite, TypeScript, Java' },
-      { key: 'TEAM', value: 'Two Members' },
+      { key: 'API', value: 'Spotify' },
     ],
   },
   {
     title: 'TRUTHLENS AI',
     description: 'A Python app that uses a custom trained machine learning model to analyze news headlines and determine its truthfulness. The model is trained on a large dataset of true and false statements, and uses natural language processing techniques to evaluate the input text. The app provides a truth score and highlights specific parts of the text that contributed to the score.',
     problem: 'News headlines can be misleading, and readers often need a quick way to question claims before sharing them.',
-    challenge: 'I had to balance model training, text preprocessing, and explainable output so the result felt transparent.',
+    challenge: 'The challenge was training a model that could somewhat accurately identify clickbait articles. I overcame this by using a Kaggle dataset filled with real and fake news headlines, and then training a model using Pytorch to learn patterns in the titles that could inticate whether an article was likely to be fake or not.',
     image: '/truthlensai.png',
     specs: [
       { key: 'LANGUAGE', value: 'Python, ML' },

@@ -32,12 +32,12 @@ export default function Bio() {
           <AnimatedSection delay={0.45}>
             <div className="max-w-2xl space-y-5 text-base md:text-lg leading-relaxed text-foreground/80">
               <p>
-                I’m a rising senior at the Morris County School of Technology and an aspiring software engineer. I’ve been coding for a few years and have experience with Java, Python, and game development in Godot. I enjoy working on projects that let me be creative, solve problems, and learn new skills. I’m organized, easy to work with, and always looking for ways to improve as a developer.
+                I’m a rising senior at the Morris County School of Technology and an aspiring software engineer. I’ve been coding for a few years and have experience with Java, Python, and web development. I am highly experienced with both backend and frontend development and I can work in a wide range of languages. I enjoy working on projects that let me be creative, solve problems, and learn new skills. In addition, I love working on projects that have a real way to help people and have an impact on their health and wellbeing. I’m organized, easy to work with, and always looking for ways to improve as a developer.
               </p>
               
               <p className="font-mono text-sm text-muted-foreground">
                 Currently looking for internships, research opportunities, and
-                open-source collaborations. Feel free to reach out!
+                open-source collaborations.
               </p>
             </div>
           </AnimatedSection>
