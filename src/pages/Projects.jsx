@@ -48,7 +48,7 @@ const projects = [
     problem: 'News headlines can be misleading, and readers often need a quick way to question claims before sharing them.',
     challenge: 'The challenge was training a model that could somewhat accurately identify clickbait articles. I overcame this by using a Kaggle dataset filled with real and fake news headlines, and then training a model using Pytorch to learn patterns in the titles that could inticate whether an article was likely to be fake or not.',
     image: '/truthlensai.png',
-    repoUrl: 'https://github.com/ayaang12/AI-Project',
+    repoUrl: 'https://github.com/AyaanG123/TruthLensAI',
     specs: [
       { key: 'LANGUAGE', value: 'Python, ML' },
       { key: 'LIBRARIES/DATASET', value: 'Pytorch, Numpy, Kaggle' },
