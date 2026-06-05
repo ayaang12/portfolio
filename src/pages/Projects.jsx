@@ -36,7 +36,7 @@ const projects = [
     problem: 'Spotify users often have large catalogs of playlists that they don’t interact with because they have trouble figuring out what to listen to.',
     challenge: 'The challenge was creating a design that was visually appealing while also displaying the correct data and functionality in a way that felt intuitive. Overcame this by utilizing LLMs to aid in spacing for different frontend components while also checking the Spotify API documentation to ensure the correct data was being pulled and displayed.',
     image: '/playlytics.png',
-    repoUrl: 'https://github.com/ayaang12/playlytics-frontend',
+    repoUrl: 'https://github.com/neelyp/playlytics-frontend',
     specs: [
       { key: 'LANGUAGE', value: 'React/Vite, TypeScript, Java' },
       { key: 'API', value: 'Spotify' },
